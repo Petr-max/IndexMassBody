@@ -1,0 +1,14 @@
+the_height = float(input("Введите высоту в cm: "))  
+the_weight = float(input("Введите вес в kg: "))  
+ 
+the_BMI = the_weight / (the_height/100)**2  
+print("Ваш индекса массы тела (ИМТ)", the_BMI)  
+ 
+if the_BMI <= 18.5:  
+    print("Упс! У вас недостаточный вес.")  
+elif the_BMI <= 24.9:  
+    print("Отлично! Вы здоровы.")  
+elif the_BMI <= 29.9:  
+    print("Ой! У вас избыточный вес.")  
+else:  
+    print("Видишь! Вы просто жир-трест.")  
